@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+    <Style id="track">
+      <LineStyle>
+        <color>ffffffff</color>
+		    <width>1</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>3fc00880</color>
+      </PolyStyle>
+    </Style>
+	
+	<Placemark>
+      <name>%NAME</name>
+      <styleUrl>#track</styleUrl>
+      <LineString>
+        <extrude>5</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+        %COORDS
+        </coordinates> 
+     </LineString>
+    </Placemark>
+
+  </Document>
+</kml>
